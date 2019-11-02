@@ -1,141 +1,154 @@
-body
-{
-    background-color: #F4F6F9
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #f4f6f9;
+}
+
 /* Start Navbar*/
-.navbar-light
-{
-    background-color: #fff !important;
-    box-shadow: 0px 0px 10px #BBB;
+.navbar-light {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 10px #bbb;
 }
-.left
-{
-    color: #C3C9D4;
-    margin-right: 17px
+.left {
+  color: #c3c9d4;
+  margin-right: 17px;
 }
-.navbar-brand
-{
-    color: #4f7cfc !important
+.navbar-brand {
+  color: #4f7cfc !important;
 }
-.navbar-nav
-{
-    margin-left: 20px;
-    width: 50%;
+.navbar-nav {
+  margin-left: 20px;
+  width: 50%;
 }
-.navbar-nav input
-{
-    border: 1px solid #C3C9D4;
+.navbar-nav input {
+  border: 1px solid #c3c9d4;
 }
 .navbar img {
-    width: 5%;
-    border-radius: 50%;
+  width: 5%;
+  border-radius: 50%;
 }
-.navbar .admin-name
-{
-    color: #A7ABB2;
-    font-size: 10px;
-    font-family: 'Arial';
-    margin-left: 10px
+.navbar .admin-name {
+  color: #a7abb2;
+  font-size: 10px;
+  font-family: 'Arial';
+  margin-left: 10px;
+  cursor: pointer;
 }
-::placeholder{
-    color: #C3C9D4;
+::placeholder {
+  color: #c3c9d4 !important;
 }
-.page_body
-{
-    margin-top: 35px
+.page_body {
+  padding-bottom: 40px;
+  margin-top: 35px;
 }
-.page_body .header h5
-{
-    display: inline-block;
-    font-size: 17px;
-    font-family: 'Arial';
-    position: relative;
-    top: -30px;
-    margin-left: 10px
+.page_body .header h5 {
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Arial';
+  position: relative;
+  top: -30px;
+  margin-left: 10px;
 }
-.page_body .header .icon
-{
-    background-color: #4f7cfc;
-    color: #fff;
-    display: inline;
-    padding: 8px;
-    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+.page_body .header .icon {
+  background-color: #4f7cfc;
+  color: #fff;
+  display: inline;
+  padding: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.page_body .header .head
-{
-    display: inline;
+.page_body .header .head {
+  display: inline;
 }
-.page_body .buttons button
-{
-    border: 1px solid #A7ABB2;
-    border-radius: 25px;
-    width: 120px;
-    margin-right: 10px;
-    color: #afb1b5;
-    background-color: #F4F6F9;
-    margin-bottom: 12px
+.page_body .buttons button {
+  border: 1px solid #a7abb2;
+  /* border-radius: 25px; */
+  width: 120px;
+  margin-right: 10px;
+  color: #afb1b5;
+  background-color: #f4f6f9;
+  margin-bottom: 12px;
+  transition: all 0.4s;
 }
 .page_body .buttons button:focus,
-.page_body .buttons button:hover
-{
-    border: 0px;
-    color: #fff;
-    background-color: #4f7cfc;
-    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+.page_body .buttons button:hover {
+  border: 0px;
+  color: #fff;
+  background-color: #4f7cfc;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.page_body .members .row .member
-{
-    background-color: #fff;
-    margin-bottom: 30px;
-    padding: 35px;
+.page_body .members .row .member {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 35px;
 }
-.fa-heart
-{
-    float: right;
-    color: #e5e6e8;
-    font-size: 20px
+.fa-heart {
+  float: right;
+  color: #e5e6e8;
+  font-size: 20px;
 }
 .member img {
-    width: 40%;
-    border-radius: 50%;
-    margin: 30px 29%
+  width: 40%;
+  border-radius: 50%;
+  margin: 30px 29%;
 }
-.member div
-{
-    display: inline;
 
+.img-scale {
+  transition: all 0.6s;
+}
 
+.img-scale:hover {
+  transform: scale(1.2);
 }
-.member .name
-{
-    font-size: 17px;
-    font-family: 'Arial';
-    font-weight: bold
+
+.member div {
+  display: inline;
 }
-.member .email
-{
-    font-size: 12px;
-    color: #C3C9D4;
-    font-family: 'Arial';
-    margin-bottom: 45px;
-    margin-top: 10px
+.member .name {
+  font-size: 17px;
+  font-family: 'Arial';
+  font-weight: bold;
 }
-.member button
-{
-    color: #C3C9D4;
-    background-color: #fff;
-    border: none;
+.member .email:link,
+.member .email:visited {
+  font-size: 12px;
+  color: #c3c9d4;
+  font-family: 'Arial';
+  margin: 10px 0 15px 0;
+  display: block;
+  transition: all 0.4s;
+}
+
+.member .email:hover,
+.member .email:active {
+  text-decoration: none;
+  color: #a5aebf;
+  transform: translateY(-3px) scale(1.1, 1);
+}
+
+.member button {
+  color: #c3c9d4;
+  background-color: #fff;
+  border: none;
 }
 .member button:focus,
-.member button:hover
-{
-    color: #fff;
-    background-color: #4f7cfc;
-    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
-    
+.member button:hover {
+  color: #fff;
+  background-color: #4f7cfc;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  /*border-radius: 25px;*/
+  transition: all 0.4s !important;
 }
-.member .view
-{
-    float: right
+.member .view {
+  float: right;
+}
+
+/* FOOTER */
+.footer {
+  background: #000;
+  padding: 30px 0;
+  color: #fff;
 }
